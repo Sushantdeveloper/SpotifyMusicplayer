@@ -277,8 +277,8 @@ filter: drop-shadow(0 1.2rem 3rem .5rem black);
     }
         @media screen and (max-width:600px) {
             .Music{
-            
-                margin-left:35px;
+                width: 24rem;
+                margin-left:25px;
 }
             .container{
   margin-left: 10px;  
