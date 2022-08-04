@@ -237,7 +237,7 @@ function stupdate(){
       }
       function hidePlayList() {
         container.style.display="none";
-        trackimage.classList.add("anime");
+        
       }
 
 
@@ -272,6 +272,7 @@ function playFromPlaylist() {
         loadtrack(indexNum);
         songplay();
         hidePlayList();
+        trackimage.classList.add("anime");
       }
     });
   }

@@ -191,7 +191,7 @@ filter: drop-shadow(0 1.2rem 3rem .5rem black);
             box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
             margin-left: 475px;
             padding: 1rem 3rem;
-            margin-top:6rem ;
+            margin-top:7rem ;
             text-align: center;
             transform:translateX(0);
             display: none;
@@ -203,14 +203,15 @@ filter: drop-shadow(0 1.2rem 3rem .5rem black);
             color: aliceblue;
                 display: flex;
         }
+        
        
         
         #cancel{
             margin-top: 12px;
-            margin-left: 6.4rem;
-            font-size: 1.5rem;
+            margin-left: 5.4rem;
+            font-size: 2.5rem;
             cursor: pointer;
-        
+    transform: translateY(-10px);
         }
         
         .playlist-div{
@@ -278,10 +279,11 @@ filter: drop-shadow(0 1.2rem 3rem .5rem black);
         @media screen and (max-width:600px) {
             .Music{
                 width: 24rem;
-                margin-left:25px;
+                margin-left:5px;
 }
             .container{
-  margin-left: 10px;  
+  margin-left: 5px;  
+  width: 24rem;
             }
                             
 
