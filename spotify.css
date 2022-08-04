@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&family=Open+Sans:ital,wght@1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap');
+    /* body  */
+body{
+    background-color:rgb(247, 246, 244);;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+                             /* style  navbar  */
+nav{
+color: rgb(250, 245, 245);
+    font-family: cursive;
+}
+                              /* style navbar list  */
+ nav ul{
+     align-items: center;
+     display: flex;
+     /* width: 100%; */
+list-style-type: none;
+height: 80px;
+background-color: black;
+    }
+                                   /* style icon image    */
+    .icon img{
+        width: 70px;
+        margin-left: 12px;
+/* margin-top: -px; */
+padding: 0 8px;
+    }
+                                     /* style icon --------- */
+    .icon{
+        display: flex;
+        align-items:center ;
+        font-weight: 800;
+        font-size: 2.5rem;
+        margin-top: 8px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    nav ul li{
+        align-items: center;
+        font-weight: 300;
+        font-size: 2rem;
+margin-left: 25px;
+    }
+                                     /* sgtyle a anchor tag  */
+    a{
+         margin-left: 20px;
+        text-decoration: none;
+        color: rgb(247, 246, 244);
+    }
+                                        /* style container */
+.Music{
+    border: solid rgb(182, 181, 181) .2rem;
+    height: 36rem;
+    width: 26rem;
+    background-color:  rgb(165, 164, 164);
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    margin-left: 475px;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+ /* -------------------------------     style the header of the music -------------------------------- */
+
+ .header{
+    display: flex;
+}
+#sidelist{
+    margin-top: 12px;
+    margin-left: 2.4rem;
+    font-size: 1.5rem;
+cursor: pointer;
+}
+#music-icon{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+h2{
+    margin-left: 2.7rem;
+}
+.detail img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem .5rem rgba(0, 0, 0, 0.2);
+
+}
+#title{
+    font-size: 15px;
+    font-weight: 1000;
+    font-family: cursive;
+    margin-top: 15px;
+
+}
+#artist{
+    font-size: 12px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-bottom: 5px; */
+}
+.songtimer {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+
+ 
+}
+  /* durition bar ------------------------------------------------------ */
+        
+  .duration input[type="range"] {
+    width: 100%;
+    outline: none;
+    height: 8px;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+.button {
+    margin:auto;
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+ margin-top: 1rem;
+}
+.button {
+    margin-bottom: .2rem;
+color: black;
+font-size: 1.8rem;
+cursor: pointer;
+filter: drop-shadow(0 1.2rem 3rem .5rem black);
+}
+.button img{
+    width: 2rem;
+    height: 2rem;
+
+}
+.pause{
+    display: none;
+   }
+
+#next:hover{
+    color: white;
+    /* box-shadow: 0 1rem 2rem .2rem rgba(0, 0, 0, 0.4); */
+}
+#play:hover{
+    color: white;
+    /* box-shadow: 0 1rem 2rem .2rem rgba(0, 0, 0, 0.4); */
+}
+#prev:hover{
+   
+    color: white;
+    /* box-shadow: 0 1rem 2rem .2rem rgba(0, 0, 0, 0.4); */
+}
+/* style volume section  */
+#mute:hover{
+    cursor: pointer;
+    color: aliceblue;
+
+}
+/* style volume section  */
+#volumeprogress{
+    cursor: pointer;
+
+}
+.volume{
+    display: flex;
+    padding: 5px 5px;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* play- list container  */
+
+        .container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 1);
+            height: 36rem;
+            width: 26rem;
+            transform: translate(-100%);
+            transition: all .5s;
+            border-radius: 2rem;
+            box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+            margin-left: 475px;
+            padding: 1rem 3rem;
+            margin-top:6rem ;
+            text-align: center;
+            transform:translateX(0);
+            display: none;
+        
+        }
+       
+        .music-playlist{
+            border-bottom: 1px solid rgba(221, 219, 219, 0.795);
+            color: aliceblue;
+                display: flex;
+        }
+       
+        
+        #cancel{
+            margin-top: 12px;
+            margin-left: 6.4rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        
+        }
+        
+        .playlist-div{
+            width: 100%;
+            height: 34rem;
+            overflow-y: auto;
+        }
+        .playlist{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        /* playlist scroll bar   */
+        .playlist-div::-webkit-scrollbar{
+            height: 5px;
+            width: 4px;
+            border: 1px solid whitesmoke;
+            background: whitesmoke;
+        }
+        .playlist-div::-webkit-scrollbar-track{
+            --webkit-box-shadow:inset 0 0 6px black};
+            .list-item::-webkit-scrollbar-thumb{
+                background-color: var(--color-primary);
+                outline: 1px solid white;
+            }
+        .song-index{
+            font-size: 1.4rem;
+            margin-right: 5px;
+           
+        }
+        .playlist p{
+            width: 90%;
+            font-size: 1.5rem;
+            border-bottom: 1px solid rgba(221, 219, 219, 0.795);
+            padding: 5px 0;
+            cursor: pointer;
+        }
+        
+         /* add amimation for rotate the image  */
+    
+          .anim{
+            animation: rotateplayer 3s linear infinite ;
+          }
+        @-o-keyframes rotateplayer{
+            from{transform: rotate(0%);}
+        to{
+            transform: rotate(360%);
+        }
+        }
+        .card-header{
+            display: flex;
+            background-color: black;
+            color: aliceblue;
+    
+        }
+                     /* footer section */
+    .card-body{
+        display: grid;
+    }
+    .btn{
+        width: 15rem;
+        transform: translateX(24rem);
+    
+    }
+        @media screen and (max-width:600px) {
+            .Music{
+            
+                margin-left:35px;
+}
+            .container{
+  margin-left: 10px;  
+            }
+                            
+
+                                       /* style icon image    */
+        .icon img{
+            width: 50px;
+            margin-left: 2px;
+    padding: 0 2px;
+        }
+    
+                                         /* style icon --------- */
+        .icon{
+            font-weight: 500;
+            font-size: 1.5rem;
+        
+        }
+        nav ul li{
+            font-weight: 200;
+            font-size: 1rem;
+    margin-left: 15px;
+        }
+                                         /* sgtyle a anchor tag  */
+        a{
+             margin-left: 10px;
+        } 
+        .btn{
+            transform: translateX(3rem);
+        
+        }  
+    }
+.anime{
+    animation: rotateplayer 3s linear infinite;
+}@keyframes rotateplayer{
+    from{
+transform: rotate(0deg);
+    }
+    to{transform: rotate(360deg);}
+
+}
+
+
