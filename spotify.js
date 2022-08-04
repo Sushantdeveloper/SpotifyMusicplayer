@@ -232,10 +232,12 @@ function stupdate(){
       sidelist.addEventListener("click",showPlayList);
       cancel.addEventListener("click",hidePlayList)
       function showPlayList() {
-        container.style.display="grid"
+        container.style.display="grid";
+        trackimage.classList.remove("anime");
       }
       function hidePlayList() {
-        container.style.display="none"
+        container.style.display="none";
+        trackimage.classList.add("anime");
       }
 
 
