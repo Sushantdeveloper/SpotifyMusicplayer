@@ -235,10 +235,16 @@ function stupdate(){
         container.style.display="grid";
         trackimage.classList.remove("anime");
       }
+      function anim(){
+        songplay();
+        trackimage.classList.add("anime");
+      }
       function hidePlayList() {
         container.style.display="none";
-        
+        anim();
+       
       }
+     
 
 
 

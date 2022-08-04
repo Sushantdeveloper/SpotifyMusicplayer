@@ -310,7 +310,7 @@ filter: drop-shadow(0 1.2rem 3rem .5rem black);
              margin-left: 10px;
         } 
         .btn{
-            transform: translateX(3rem);
+            transform: translateX(2rem);
         
         }  
     }
